@@ -1,6 +1,14 @@
 import numpy as np
 import pandas as pd
 import tensorflow as tf
+import random
+
+SEED = 42
+np.random.seed(SEED)
+random.seed(SEED)
+tf.random.set_seed(SEED)
+
+
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.utils.class_weight import compute_class_weight
