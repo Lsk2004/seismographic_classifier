@@ -1,4 +1,3 @@
-# Place for any extra helpers, e.g., plotting, metrics
 import matplotlib.pyplot as plt
 
 def plot_waveform(waveform, label=None):

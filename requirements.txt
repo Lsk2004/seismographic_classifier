@@ -5,3 +5,4 @@ scikit-learn
 tensorflow
 matplotlib
 keras-tuner
+imbalanced-learn

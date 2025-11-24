@@ -4,7 +4,7 @@ from tensorflow.keras import Sequential, layers
 
 def build_classifier(input_shape):
     model = Sequential([
-        layers.Permute((2, 1), input_shape=input_shape),      # (3, 12000) -> (12000, 3)
+        layers.Permute((2, 1), input_shape=input_shape),      
         layers.Conv1D(64, 9, strides=2, activation='relu', padding='same'),
         layers.BatchNormalization(),
         layers.MaxPooling1D(4),
